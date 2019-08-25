@@ -1,0 +1,51 @@
+{
+    "name": "log-stderr",
+    "version": "0.0.0",
+    "description": "Simple Node.js logger without dependencies.",
+    "author": "Anton Kulikov <anton.kulikov@protonmail.com>",
+    "keywords": [
+        "stderr",
+        "log",
+        "logger"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/4ops/log-stderr#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/4ops/log-stderr.git"
+    },
+    "bugs": {
+        "url": "https://github.com/4ops/log-stderr/issues"
+    },
+    "engines": {
+        "node": ">= 12.0.0"
+    },
+    "main": "src/index.js",
+    "scripts": {
+        "prettier": "prettier --write src/**/*.js",
+        "lint": "eslint --debug src/",
+        "lint:write": "eslint --debug src/ --fix",
+        "precommit": "lint-staged",
+        "prepush": "git push",
+        "push": "git push --tags",
+        "preversion": "git add -A .",
+        "postversion": "yarn run push",
+        "example": "LOG_TIME=true LOG_LEVEL=debug node example.js"
+    },
+    "devDependencies": {
+        "eslint": "^6.2.1",
+        "eslint-config-prettier": "^6.1.0",
+        "eslint-plugin-node": "^9.1.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-security": "^1.4.0",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.3",
+        "prettier": "^1.18.2"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier-eslint --write",
+            "git add"
+        ]
+    }
+}

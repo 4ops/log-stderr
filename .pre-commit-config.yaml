@@ -1,0 +1,16 @@
+repos:
+  - repo: git://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-added-large-files
+      - id: trailing-whitespace
+      - id: check-merge-conflict
+      - id: detect-private-key
+  - repo: git://github.com/prettier/prettier
+    rev: 1.18.2
+    hooks:
+      - id: prettier
+  - repo: git://github.com/pre-commit/mirrors-eslint
+    rev: v6.2.1
+    hooks:
+      - id: eslint
