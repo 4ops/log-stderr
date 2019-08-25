@@ -1,5 +1,6 @@
 # log-stderr
 
+[![Build Status](https://travis-ci.org/4ops/log-stderr.svg?branch=master)](https://travis-ci.org/4ops/log-stderr)
 [![install size](https://packagephobia.now.sh/badge?p=log-stderr)](https://packagephobia.now.sh/result?p=log-stderr)
 
 Simple Node.js logger without dependencies. Prints formatted messages to `stderr`.

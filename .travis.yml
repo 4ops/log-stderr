@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 12
+env:
+  - LOG_LEVEL=debug LOG_TIME=1
+  - LOG_LEVEL=debug
+  - LOG_LEVEL=notice LOG_TIME=1
+  - LOG_LEVEL=notice
+  - LOG_LEVEL=info LOG_TIME=1
+  - LOG_LEVEL=info
+  - LOG_LEVEL=warn LOG_TIME=1
+  - LOG_LEVEL=warn
+  - LOG_LEVEL=error LOG_TIME=1
+  - LOG_LEVEL=error
+  - LOG_LEVEL=invalid LOG_TIME=1
+  - LOG_LEVEL=invalid
+script:
+  - node example.js
