@@ -1,6 +1,6 @@
 {
     "name": "log-stderr",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "Simple Node.js logger without dependencies.",
     "author": "Anton Kulikov <anton.kulikov@protonmail.com>",
     "keywords": [
